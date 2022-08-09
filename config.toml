@@ -1,0 +1,132 @@
+baseURL = 'https://echosonusharama.in/'
+languageCode = 'en-us'
+title = 'Sonu Sharma'
+paginate = 5
+theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+pygmentsUseClasses = true
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+title = "SonuSharma"
+description = "This is the website of Sonu Sharma, Full stack developer."
+keywords = ["Blog", "Portfolio"]
+author = "Sonu Sharma"
+images = ["<link or path of image for opengraph, twitter-cards>"]
+DateFormat = "January 2, 2006"
+defaultTheme = "auto"
+disableThemeToggle = false
+
+ShowReadingTime = true
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
+
+[params.assets]
+favicon = "<link / abs url>"
+favicon16x16 = "<link / abs url>"
+favicon32x32 = "<link / abs url>"
+apple_touch_icon = "<link / abs url>"
+safari_pinned_tab = "<link / abs url>"
+
+[params.label]
+text = "Sonu Sharma"
+icon = "/apple-touch-icon.png"
+iconHeight = 35
+
+[params.profileMode]
+enabled = true
+title = "Hi there! \U0001F44B"
+subtitle = "I’m **Sonu Sharma**.I mostly build things for the web some may also call me a full stack developer."
+imageUrl = "/images/profile.webp"
+imageWidth = 120
+imageHeight = 120
+imageTitle = "Full Stack Developer"
+
+[[params.profileMode.buttons]]
+name = "Projects"
+url = "projects"
+
+[[params.profileMode.buttons]]
+name = "Blogs"
+url = "blogs"
+
+[params.homeInfoParams]
+Title = "Hi there! \U0001F44B"
+Content = ""
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/echosonusharma"
+
+[[params.socialIcons]]
+name = "stackoverflow"
+url = "https://stackoverflow.com/users/17120153/sonu-sharma"
+
+# [[params.socialIcons]]
+# name = "twitter"
+# url = "https://twitter.com/"
+
+[params.cover]
+hidden = true
+hiddenInList = true
+hiddenInSingle = true
+
+# [params.editPost]
+# URL = "https://github.com/<path_to_repo>/content"
+# Text = "Suggest Changes"
+# appendFilePath = true
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1_000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 10
+
+[[menu.main]]
+identifier = "projects"
+name = "Projects"
+url = "/projects/"
+weight = 20
+
+[[menu.main]]
+identifier = "blogs"
+name = "Blogs"
+url = "/blogs/"
+weight = 30
+
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 40
+
+# [markup.highlight]
+# noClasses = false
