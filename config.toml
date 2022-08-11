@@ -41,7 +41,7 @@ showtoc = false
 tocopen = false
 
 [params.assets]
-favicon = "<link / abs url>"
+favicon = "/favicon.ico"
 favicon16x16 = "<link / abs url>"
 favicon32x32 = "<link / abs url>"
 apple_touch_icon = "<link / abs url>"
@@ -55,7 +55,7 @@ iconHeight = 35
 [params.profileMode]
 enabled = true
 title = "Hi there! \U0001F44B"
-subtitle = "I’m **Sonu Sharma**.I mostly build things for the web some may also call me a full stack developer."
+subtitle = "I’m **Sonu Sharma**. I mostly build things for the web, some may also call me a Full-stack developer. I moslty rely on react and node to get through the day."
 imageUrl = "/images/profile.webp"
 imageWidth = 120
 imageHeight = 120
@@ -80,10 +80,6 @@ url = "https://github.com/echosonusharma"
 [[params.socialIcons]]
 name = "stackoverflow"
 url = "https://stackoverflow.com/users/17120153/sonu-sharma"
-
-# [[params.socialIcons]]
-# name = "twitter"
-# url = "https://twitter.com/"
 
 [params.cover]
 hidden = true
