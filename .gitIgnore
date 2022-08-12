@@ -5,7 +5,7 @@
 
 *.exe
 *.test
-
-.hugo_build.lock
-
 .DS_Store
+
+# hugo lock file
+.hugo_build.lock
