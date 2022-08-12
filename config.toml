@@ -42,23 +42,23 @@ tocopen = false
 
 [params.assets]
 favicon = "/favicon.ico"
-favicon16x16 = "<link / abs url>"
-favicon32x32 = "<link / abs url>"
-apple_touch_icon = "<link / abs url>"
-safari_pinned_tab = "<link / abs url>"
+favicon16x16 = "/favicon-16x16.png"
+favicon32x32 = "/favicon-32x32.png"
+apple_touch_icon = "/images/profile.webp"
+safari_pinned_tab = "/favicon-16x16.png"
 
 [params.label]
 text = "Sonu Sharma"
-icon = "/apple-touch-icon.png"
+icon = "/images/profile.webp"
 iconHeight = 35
 
 [params.profileMode]
 enabled = true
-title = "Hi there! \U0001F44B"
-subtitle = "I’m **Sonu Sharma**. I mostly build things for the web, some may also call me a Full-stack developer. I moslty rely on react and node to get through the day."
+title = "Hello! \U0001F44B"
+subtitle = "I’m **Sonu Sharma**. I mostly build things for the web, some may also call me a *full-stack developer*. I moslty rely on react and node to get through the day."
 imageUrl = "/images/profile.webp"
-imageWidth = 120
-imageHeight = 120
+imageWidth = 150
+imageHeight = 150
 imageTitle = "Full Stack Developer"
 
 [[params.profileMode.buttons]]
@@ -70,7 +70,7 @@ name = "Blogs"
 url = "blogs"
 
 [params.homeInfoParams]
-Title = "Hi there! \U0001F44B"
+Title = "Hello! \U0001F44B"
 Content = ""
 
 [[params.socialIcons]]
@@ -85,11 +85,6 @@ url = "https://stackoverflow.com/users/17120153/sonu-sharma"
 hidden = true
 hiddenInList = true
 hiddenInSingle = true
-
-# [params.editPost]
-# URL = "https://github.com/<path_to_repo>/content"
-# Text = "Suggest Changes"
-# appendFilePath = true
 
 [params.fuseOpts]
 isCaseSensitive = false
@@ -123,6 +118,3 @@ identifier = "tags"
 name = "Tags"
 url = "/tags/"
 weight = 40
-
-# [markup.highlight]
-# noClasses = false
