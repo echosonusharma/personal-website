@@ -73,9 +73,14 @@ url = "blogs"
 Title = "Hello! \U0001F44B"
 Content = ""
 
+
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/echosonusharma"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto://echosonusharma@gmail.com"
 
 [[params.socialIcons]]
 name = "stackoverflow"
