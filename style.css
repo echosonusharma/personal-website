@@ -195,7 +195,9 @@ footer span { color: var(--brown); }
 
 @media (max-width: 600px) {
   .exp-item { grid-template-columns: 1fr; }
-  .exp-meta { text-align: left; }
+  .exp-meta { text-align: left; grid-column: 1; }
+  .exp-header { grid-column: 1; }
+  .exp-bullets { grid-column: 1; }
   nav .inner { flex-wrap: wrap; gap: 8px; }
   .blog-card { flex-wrap: wrap; gap: 6px; }
   .blog-tags { display: none; }
