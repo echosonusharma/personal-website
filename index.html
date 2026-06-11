@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sonu Sharma — Software Developer. Nearly 5 years building scalable backend systems, microservices, and high-performance web applications." />
+  <meta name="theme-color" content="#222222" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Sonu Sharma — Software Developer" />
+  <meta property="og:description" content="Nearly 5 years building scalable backend systems, microservices, and high-performance web applications." />
+  <meta property="og:url"         content="https://echosonusharma.github.io" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:title"       content="Sonu Sharma — Software Developer" />
+  <meta name="twitter:description" content="Nearly 5 years building scalable backend systems, microservices, and high-performance web applications." />
+
+  <title>Sonu Sharma — Software Developer</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%23222222'/><text x='4' y='22' font-family='monospace' font-size='16' fill='%2378824b'>%24</text></svg>" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="inner">
+      <a class="nav-brand" href="#"><span>~/</span>sonu-sharma</a>
+      <ul class="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#blog">blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- POST VIEW -->
+  <div id="post-view" role="article">
+    <div class="site" style="padding-top:48px;padding-bottom:64px">
+      <button class="post-back" onclick="closePost()">← back</button>
+      <div id="post-content"></div>
+    </div>
+  </div>
+
+  <div id="main-view">
+    <main class="site">
+      <header class="hero" id="about">
+        <p class="hero-prompt">whoami</p>
+        <h1 id="hero-name"><span class="cursor"></span></h1>
+        <p class="hero-role" id="hero-role"></p>
+        <p class="hero-bio" id="hero-bio"></p>
+        <div class="hero-links" id="hero-links"></div>
+      </header>
+
+      <section id="projects">
+        <div class="section-label"><h2>Projects</h2></div>
+        <div class="projects-grid" id="projects-grid"></div>
+      </section>
+
+      <section id="experience">
+        <div class="section-label"><h2>Experience</h2></div>
+        <div class="exp-list" id="exp-list"></div>
+      </section>
+
+      <section id="blog">
+        <div class="section-label"><h2>Blog</h2></div>
+        <div class="blog-list" id="blog-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <footer><span>~/sonu-sharma</span> · built with monospace &amp; earthy hues</footer>
+
+  <script src="index.js"></script>
+  <script>
+    const ICONS = {
+      github:   `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>`,
+      linkedin: `<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>`
+    };
+
+    const SITE_TITLE = 'Sonu Sharma — Software Developer';
+
+    function parseBullet(text) {
+      return text.replace(/<hl>(.*?)<\/hl>/g, '<span class="hl">$1</span>');
+    }
+
+    function render(d) {
+      document.getElementById('hero-name').innerHTML =
+        `${d.name}<span class="cursor"></span>`;
+      document.getElementById('hero-role').textContent = d.role;
+      document.getElementById('hero-bio').textContent  = d.bio;
+
+      const linksEl = document.getElementById('hero-links');
+      d.links.forEach((l, i) => {
+        const a = document.createElement('a');
+        a.href      = l.url;
+        a.target    = '_blank';
+        a.rel       = 'noopener noreferrer';
+        a.className = 'btn' + (i === 0 ? ' btn-primary' : '');
+        a.setAttribute('aria-label', l.label);
+        a.innerHTML = `${ICONS[l.icon] || ''} ${l.label}`;
+        linksEl.appendChild(a);
+      });
+
+      const projEl = document.getElementById('projects-grid');
+      d.projects.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'project-card';
+        card.tabIndex  = 0;
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', p.name);
+
+        const iconHtml = p.icon
+          ? `<span class="project-icon"><img src="${p.icon}" alt="" loading="lazy" width="18" height="18" /></span>`
+          : '';
+
+        const linksHtml = [
+          p.url      ? `<a class="project-link" href="${p.url}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">↗ code</a>` : '',
+          p.videoUrl ? `<a class="project-link project-link-yt" href="${p.videoUrl}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">▶ demo</a>` : ''
+        ].filter(Boolean).join('');
+
+        card.innerHTML = `
+          <div class="project-header">
+            ${iconHtml}
+            <span class="project-name">${p.name}</span>
+            <div class="project-links">${linksHtml}</div>
+          </div>
+          <div class="project-desc">${p.description}</div>
+          <div class="project-tags">${p.tags.map(t => `<span class="project-tag">${t}</span>`).join('')}</div>
+        `;
+
+        const go = () => { window.location.hash = 'project/' + p.slug; };
+        card.addEventListener('click', go);
+        card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+        projEl.appendChild(card);
+      });
+
+      const blogEl = document.getElementById('blog-list');
+      d.blogs.forEach(post => {
+        const row = document.createElement('div');
+        row.className  = 'blog-card';
+        row.tabIndex   = 0;
+        row.setAttribute('role', 'button');
+        row.setAttribute('aria-label', post.title);
+        row.innerHTML = `
+          <span class="blog-date">${post.date}</span>
+          <span class="blog-title">${post.title}</span>
+          <span class="blog-tags">${post.tags.map(t => `<span class="blog-tag">${t}</span>`).join('')}</span>
+          <span class="blog-arrow">→</span>
+        `;
+        const go = () => { window.location.hash = 'blog/' + post.slug; };
+        row.addEventListener('click', go);
+        row.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); go(); } });
+        blogEl.appendChild(row);
+      });
+
+      const expEl = document.getElementById('exp-list');
+      d.experience.forEach(job => {
+        const item = document.createElement('div');
+        item.className = 'exp-item';
+        item.innerHTML = `
+          <div class="exp-header">
+            <div class="exp-role">${job.role} <span style="color:var(--fg-dim);font-weight:400;font-size:11px">(${job.type})</span></div>
+            ${job.company ? `<div style="color:var(--terra);font-style:italic;font-size:12px;margin-top:2px">${job.company}</div>` : ''}
+          </div>
+          <div class="exp-meta">
+            <div class="exp-date">${job.period}</div>
+          </div>
+          <ul class="exp-bullets">
+            ${job.bullets.map(b => `<li>${parseBullet(b)}</li>`).join('')}
+          </ul>
+        `;
+        expEl.appendChild(item);
+      });
+    }
+
+    function showDetail(html, title) {
+      document.getElementById('post-content').innerHTML = html;
+      document.getElementById('post-view').classList.add('active');
+      document.getElementById('main-view').classList.add('hidden');
+      document.title = `${title} — ${SITE_TITLE}`;
+      window.scrollTo(0, 0);
+    }
+
+    function openPost(slug) {
+      const post = DATA.blogs.find(b => b.slug === slug);
+      if (!post) {
+        showDetail(`<p class="post-not-found">post not found: <code>${slug}</code></p>`, '404');
+        return;
+      }
+      showDetail(`
+        <div class="post-title">${post.title}</div>
+        <div class="post-meta">
+          <span>${post.date}</span>
+          ${post.tags.map(t => `<span class="blog-tag">${t}</span>`).join('')}
+        </div>
+        <div class="post-body">${post.content}</div>
+      `, post.title);
+    }
+
+    function openProject(slug) {
+      const proj = DATA.projects.find(p => p.slug === slug);
+      if (!proj) {
+        showDetail(`<p class="post-not-found">project not found: <code>${slug}</code></p>`, '404');
+        return;
+      }
+
+      const iconHtml = proj.icon
+        ? `<span class="proj-detail-icon"><img src="${proj.icon}" alt="" loading="lazy" /></span>`
+        : '';
+
+      const linksHtml = [
+        proj.url      ? `<a class="btn" href="${proj.url}" target="_blank" rel="noopener noreferrer">↗ code</a>` : '',
+        proj.videoUrl ? `<a class="btn" href="${proj.videoUrl}" target="_blank" rel="noopener noreferrer" style="color:var(--terra);border-color:var(--terra)">▶ demo</a>` : ''
+      ].filter(Boolean).join('');
+
+      showDetail(`
+        <div class="proj-detail-header">
+          ${iconHtml}
+          <div class="post-title">${proj.name}</div>
+          ${linksHtml ? `<div class="proj-detail-links">${linksHtml}</div>` : ''}
+        </div>
+        <div class="proj-detail-tags">
+          ${proj.tags.map(t => `<span class="blog-tag">${t}</span>`).join('')}
+        </div>
+        <div class="post-body" style="margin-top:32px">${proj.details || proj.description}</div>
+      `, proj.name);
+    }
+
+    function closePost() {
+      document.getElementById('post-view').classList.remove('active');
+      document.getElementById('main-view').classList.remove('hidden');
+      document.title = SITE_TITLE;
+      history.pushState('', '', window.location.pathname);
+      window.scrollTo(0, 0);
+    }
+
+    function router() {
+      const hash = window.location.hash;
+      if (hash.startsWith('#blog/')) {
+        openPost(hash.slice(6));
+      } else if (hash.startsWith('#project/')) {
+        openProject(hash.slice(9));
+      } else {
+        document.getElementById('post-view').classList.remove('active');
+        document.getElementById('main-view').classList.remove('hidden');
+        document.title = SITE_TITLE;
+      }
+    }
+
+    render(DATA);
+    router();
+    window.addEventListener('hashchange', router);
+  </script>
+
+</body>
+</html>
