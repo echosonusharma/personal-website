@@ -6,8 +6,6 @@ description: From drawing triangles on a terminal to building AI-powered backend
 draft: true
 ---
 
-I've been thinking a lot on how 
-
 *Until next time.*
 
 ![chama](/chama.gif)

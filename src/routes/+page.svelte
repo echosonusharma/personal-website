@@ -47,14 +47,14 @@ onMount(() => {
 </script>
 
 <svelte:head>
-  <title>Sonu Sharma - Software Developer</title>
-  <meta name="description" content="Sonu Sharma - Software Developer. Nearly 5 years building scalable backend systems, microservices, and high-performance web applications." />
+  <title>Sonu Sharma - Backend / AI Developer</title>
+  <meta name="description" content="Sonu Sharma - Backend / AI Developer. Over 5 years building scalable backend systems, microservices, and high-performance web applications." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sonu Sharma - Software Developer" />
+  <meta property="og:title" content="Sonu Sharma - Backend / AI Developer" />
   <meta property="og:description" content="Nearly 5 years building scalable backend systems, microservices, and high-performance web applications." />
   <meta property="og:url" content="https://echosonusharma.in" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Sonu Sharma - Software Developer" />
+  <meta name="twitter:title" content="Sonu Sharma - Backend / AI Developer" />
   <meta name="twitter:description" content="Nearly 5 years building scalable backend systems, microservices, and high-performance web applications." />
 </svelte:head>
 
@@ -63,7 +63,7 @@ onMount(() => {
     <p class="hero-prompt">whoami</p>
     <h1>{displayedName}<span class="cursor"></span></h1>
     <p class="hero-role">Backend / AI Developer</p>
-    <p class="hero-bio">Software developer with over 5 years of experience. Started as a full-stack developer, now focused on AI/backend systems — from multi-agent RAG pipelines and CDC data systems to designing & building sophisticated microservices architecture.</p>
+    <p class="hero-bio">Backend / AI developer with over 5 years of experience. Started as a full-stack developer, now focused on AI/backend systems — from multi-agent RAG pipelines and CDC data systems to designing & building sophisticated microservices architecture.</p>
     <div class="hero-links">
       <a href="https://github.com/echosonusharma" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="github">
         {@html githubSvg}

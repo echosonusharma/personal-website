@@ -4,6 +4,7 @@
   export let data: { project: Project };
   const { project } = data;
 
+
   function youtubeEmbedUrl(url: string): string {
     const match = url.match(/(?:v=|youtu\.be\/)([A-Za-z0-9_-]{11})/);
     return match ? `https://www.youtube.com/embed/${match[1]}` : url;
@@ -26,8 +27,14 @@
   </div>
 
   <div class="proj-links">
+    {#if project.installUrl}
+      <a class="btn btn-primary" href={project.installUrl} target="_blank" rel="noopener noreferrer">↓ install</a>
+    {/if}
+    {#if project.websiteUrl}
+      <a class="btn" href={project.websiteUrl} target="_blank" rel="noopener noreferrer">↗ website</a>
+    {/if}
     {#if project.url}
-      <a class="btn btn-primary" href={project.url} target="_blank" rel="noopener noreferrer">↗ code</a>
+      <a class="btn" href={project.url} target="_blank" rel="noopener noreferrer">↗ code</a>
     {/if}
     {#if project.videoUrl}
       <a class="btn" href={project.videoUrl} target="_blank" rel="noopener noreferrer">▶ youtube</a>
@@ -53,7 +60,7 @@
   {/if}
 
   {#if project.longDescription}
-    <p class="proj-desc">{project.longDescription}</p>
+    <div class="proj-desc">{@html project.longDescription}</div>
   {:else}
     <p class="proj-desc">{project.description}</p>
   {/if}
