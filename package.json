@@ -13,6 +13,9 @@
     "@sveltejs/kit": "^2.21.4",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "mdsvex": "^0.12.3",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "shiki": "^4.4.3",
     "svelte": "^5.33.8",
     "vite": "^6.3.5"
   }

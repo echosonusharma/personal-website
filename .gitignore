@@ -1,3 +1,5 @@
 node_modules/
 .svelte-kit/
 build/
+# sample/demo - local showcase only, not deployed
+src/posts/kitchen-sink.md

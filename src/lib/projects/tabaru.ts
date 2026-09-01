@@ -8,7 +8,7 @@ const tabaru: Project = {
   installUrl: 'https://chromewebstore.google.com/detail/tabaru/ameinjfiidfphkdbmdhlebibjgafdokc',
   url: 'https://github.com/echosonusharma/tabaru',
   description: 'Keyboard-first tab manager extension. One click navigation & fuzzy search across all tabs, command based actions, session snapshots, auto-grouping, and a custom new tab, no mouse needed.',
-  tags: ['TypeScript', 'Browser Extension', 'Rust', 'WASM', 'WebExtension'],
+  tags: ['Browser Extension', 'Rust', 'TypeScript', 'WASM'],
   longDescription: `
 <img src="/tabaru-overlay.png" alt="Tabaru fuzzy search overlay" style="width:100%;border-radius:6px;margin-bottom:24px" />
 

@@ -1,8 +1,8 @@
 <script lang="ts">
   import type { Project } from '$lib/data/projects';
 
-  export let data: { project: Project };
-  const { project } = data;
+  let { data }: { data: { project: Project } } = $props();
+  const project = $derived(data.project);
 
 
   function youtubeEmbedUrl(url: string): string {

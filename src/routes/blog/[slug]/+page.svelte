@@ -1,8 +1,12 @@
 <script lang="ts">
-  export let data: {
-    content: ConstructorOfATypedSvelteComponent;
-    metadata: { title: string; date: string; tags: string[]; description?: string; draft?: boolean };
-  };
+  let { data }: {
+    data: {
+      content: import('svelte').Component;
+      metadata: { title: string; date: string; tags: string[]; description?: string; draft?: boolean };
+    };
+  } = $props();
+
+  const Content = $derived(data.content);
 </script>
 
 <svelte:head>
@@ -25,9 +29,8 @@
 
   {#if data.metadata.draft}
     <div class="draft-banner">✏ still writing...</div>
-  {:else}
-    <div class="post-body">
-      <svelte:component this={data.content} />
-    </div>
   {/if}
+  <div class="post-body">
+    <Content />
+  </div>
 </div>
