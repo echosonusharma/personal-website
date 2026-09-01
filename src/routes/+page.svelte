@@ -85,6 +85,29 @@ onMount(() => {
     </div>
   </header>
 
+  <section id="talk">
+    <div class="section-label"><h2>LET'S TALK</h2></div>
+    <div class="talk-card">
+      <h3 class="talk-title">Have something you're building?</h3>
+      <p class="talk-desc">Open to conversations about AI products, engineering, consulting, and contract work.</p>
+      <p class="talk-desc">If you're building something interesting, improving an existing product, or just want to explore what AI could do for your business, let's talk.</p>
+      <ul class="talk-list">
+        <li>AI / product brainstorming</li>
+        <li>Find opportunities for AI &amp; automation</li>
+        <li>RAG, agents &amp; LLM systems</li>
+        <li>Architecture &amp; technical reviews</li>
+        <li>Contract / freelance engineering</li>
+        <li>Backend &amp; AI infrastructure</li>
+      </ul>
+      <div class="talk-cta">
+        <a href="https://calendly.com/echosonusharma/30min" target="_blank" rel="noopener noreferrer" class="btn btn-primary talk-btn" aria-label="Book a 30-min call on Calendly">
+          Book a 30-min call →
+        </a>
+        <span class="talk-meta">30 min · Google Meet · No pitch · Just a conversation</span>
+      </div>
+    </div>
+  </section>
+
   <section id="projects">
     <div class="section-label"><h2>Projects</h2></div>
     <div class="projects-grid">

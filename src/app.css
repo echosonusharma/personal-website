@@ -88,6 +88,25 @@ section:last-child { border-bottom: none; }
 .section-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
 
+/* TALK */
+.talk-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 22px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.talk-title { color: var(--fg-bright); font-size: 14px; font-weight: 600; letter-spacing: 0.02em; }
+.talk-desc { color: var(--fg-dim); font-size: 12px; line-height: 1.7; }
+.talk-list { list-style: none; display: flex; flex-direction: column; gap: 6px; padding: 0; }
+.talk-list li { color: var(--fg-dim); font-size: 12px; padding-left: 14px; position: relative; line-height: 1.5; }
+.talk-list li::before { content: '›'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+.talk-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 4px; }
+.talk-btn { font-weight: 600; }
+.talk-meta { color: var(--fg-dim); font-size: 11px; letter-spacing: 0.03em; }
+
 /* PROJECTS */
 .projects-grid { display: flex; flex-direction: column; gap: 14px; }
 
