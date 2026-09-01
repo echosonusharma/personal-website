@@ -7,7 +7,7 @@ const cosmog: Project = {
   installUrl: 'https://github.com/echosonusharma/cosmog/releases',
   url: 'https://github.com/echosonusharma/cosmog',
   description: 'Native S3 client for desktop and Android. Manage buckets across AWS S3, Backblaze B2, Cloudflare R2, and any S3-compatible provider with encryption, auto-sync, and MCP support.',
-  tags: ['Tauri', 'Rust', 'TypeScript', 'S3', 'Desktop App', 'Android'],
+  tags: ['Tauri', 'Rust', 'TypeScript', 'S3', 'Desktop App', 'Android', 'MCP'],
   longDescription: `
 <img src="/preview.gif" alt="Cosmog preview" style="width:100%;border-radius:6px;margin-bottom:24px" />
 
