@@ -75,7 +75,7 @@ onMount(() => {
       </a>
       {#if !emailRevealed}
         <button class="btn btn-reach" onclick={handleReachOut} disabled={emailAnimating} aria-label="reveal email">
-          reach out to me
+          write to me
         </button>
       {:else}
         <a href="mailto:{decodeEmail()}" class="btn btn-email-revealed" aria-label="email">
@@ -108,8 +108,8 @@ onMount(() => {
     </div>
   </section>
 
-  <section id="projects">
-    <div class="section-label"><h2>Projects</h2></div>
+  <section id="things-ive-built">
+    <div class="section-label"><h2>Things I've built</h2></div>
     <div class="projects-grid">
       {#each projects as project}
         <a

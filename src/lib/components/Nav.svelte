@@ -4,7 +4,7 @@
     <ul class="nav-links">
       <li><a href="/#about">about</a></li>
       <li><a href="/#talk">talk</a></li>
-      <li><a href="/#projects">projects</a></li>
+      <li><a href="/#things-ive-built">things i've built</a></li>
       <li><a href="/#blog">blog</a></li>
     </ul>
   </div>

@@ -17,7 +17,7 @@
 </svelte:head>
 
 <div class="site" style="padding-top:48px;padding-bottom:64px">
-  <a href="/#projects" class="post-back">← back</a>
+  <a href="/#things-ive-built" class="post-back">← back</a>
 
   <div class="proj-header">
     {#if project.icon}
