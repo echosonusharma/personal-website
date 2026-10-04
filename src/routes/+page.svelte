@@ -47,23 +47,23 @@ onMount(() => {
 </script>
 
 <svelte:head>
-  <title>Sonu Sharma - Full-Stack AI Engineer</title>
-  <meta name="description" content="Full-Stack AI Engineer with 5+ years of experience building LLM-powered products, automation, RAG pipelines, and multi-agent systems. Strong backend expertise in Node.js, Python, and Go, with experience designing and shipping production AI systems." />
+  <title>Sonu Sharma - AI Engineer</title>
+  <meta name="description" content="AI Engineer with 5+ years of experience building LLM-powered products, automation, RAG pipelines, and multi-agent systems. Strong backend expertise in Node.js, Python, and Go, with experience designing and shipping production AI systems." />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sonu Sharma - Full-Stack AI Engineer" />
-  <meta property="og:description" content="Full-Stack AI Engineer with 5+ years of experience building LLM-powered products, automation, RAG pipelines, and multi-agent systems. Strong backend expertise in Node.js, Python, and Go, with experience designing and shipping production AI systems." />
+  <meta property="og:title" content="Sonu Sharma - AI Engineer" />
+  <meta property="og:description" content="AI Engineer with 5+ years of experience building LLM-powered products, automation, RAG pipelines, and multi-agent systems. Strong backend expertise in Node.js, Python, and Go, with experience designing and shipping production AI systems." />
   <meta property="og:url" content="https://echosonusharma.in" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Sonu Sharma - Full-Stack AI Engineer" />
-  <meta name="twitter:description" content="Full-Stack AI Engineer with 5+ years of experience building LLM-powered products, automation, RAG pipelines, and multi-agent systems. Strong backend expertise in Node.js, Python, and Go, with experience designing and shipping production AI systems." />
+  <meta name="twitter:title" content="Sonu Sharma - AI Engineer" />
+  <meta name="twitter:description" content="AI Engineer with 5+ years of experience building LLM-powered products, automation, RAG pipelines, and multi-agent systems. Strong backend expertise in Node.js, Python, and Go, with experience designing and shipping production AI systems." />
 </svelte:head>
 
 <div class="site">
   <header class="hero" id="about">
     <p class="hero-prompt">whoami</p>
     <h1>{displayedName}<span class="cursor"></span></h1>
-    <p class="hero-role">Full-Stack AI Engineer</p>
-    <p class="hero-bio">Full-Stack AI Engineer with 5+ years of experience building LLM-powered products, automation, RAG pipelines, and multi-agent systems. Strong backend expertise in Node.js, Python, and Go, with experience designing and shipping production AI systems.</p>
+    <p class="hero-role">AI Engineer</p>
+    <p class="hero-bio">AI Engineer with 5+ years of experience building LLM-powered products, automation, RAG pipelines, and multi-agent systems. Strong backend expertise in Node.js, Python, and Go, with experience designing and shipping production AI systems.</p>
     <div class="hero-links">
       <a href="https://github.com/echosonusharma" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="github">
         {@html githubSvg}
@@ -147,7 +147,7 @@ onMount(() => {
           aria-label={post.title}
         >
           <span class="blog-date">{post.date}</span>
-          <span class="blog-title">{post.title}{#if post.draft} <span class="draft-chip">draft</span>{/if}</span>
+          <span class="blog-title"><span class="blog-title-text">{post.title}</span>{#if post.draft}<span class="draft-chip">draft</span>{/if}</span>
           <span class="blog-tags">
             {#each post.tags as tag}
               <span class="blog-tag">{tag}</span>
